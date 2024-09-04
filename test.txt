@@ -1,0 +1,17 @@
+home
+login/register
+movie cart
+detail
+search
+favorite list
+save list
+detail
+profile
+
+admin
+login
+users
+movies
+
+
+
