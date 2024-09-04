@@ -1,0 +1,15 @@
+@mixin justify($param) {
+  .justify-content-#{$param} {
+    justify-content: $param;
+  }
+}
+@mixin align($param) {
+    .align-items-#{$param} {
+      align-items: $param;
+    }
+  }
+@mixin display($param) {
+  .d-#{$param} {
+    display: $param;
+  }
+}

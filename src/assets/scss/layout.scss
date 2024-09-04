@@ -1,0 +1,14 @@
+@import "./mixin.scss";
+
+@include justify(center);
+@include align(center);
+@include justify(flex-start);
+@include justify(flex-end);
+@include justify(space-between);
+@include justify(space-around);
+@include justify(space-evenly);
+@include display(flex);
+@include display(none);
+@include display(inline);
+@include display(grid);
+@include display(block);
