@@ -2,8 +2,8 @@ import { IoMdClose } from "react-icons/io";
 
 function SearchModal({ elem }) {
   const closeModal = () => {
-    elem.current.style.bottom = "800px";
-    elem.current.style.top = "-800px";
+    elem.current.style.bottom = "100vh";
+    elem.current.style.top = "-100vh";
   };
   return (
     <div className="search-modal" ref={elem}>

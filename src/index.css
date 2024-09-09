@@ -60,47 +60,65 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #050738; }
 
-header {
+#user header {
   padding-block: 1.9rem;
   box-shadow: 0 0 10px 1px #6e6767;
   padding-inline: 7rem; }
-  header * {
+  #user header * {
     color: #fff; }
-  header div:last-child svg {
+  #user header div:last-child svg {
     font-size: 35px; }
-  header div:last-child a {
+  #user header div:last-child a {
     margin-left: 30px; }
-  header .logo a {
+  #user header .logo a {
     font-size: 35px;
     -webkit-text-stroke: 1px #ffffff;
     color: transparent; }
-  header .menu {
+  #user header .menu {
     gap: 40px; }
-  header .loginbtn {
+  #user header .loginbtn {
     background-color: #fff;
     color: darkblue;
     padding: 10px 30px; }
-
-.search-modal {
+#user .search-modal {
   position: fixed;
   inset: 0;
-  bottom: 800px;
-  top: -800px;
+  bottom: 100vh;
+  top: -100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 1s;
   background-color: #141460; }
-  .search-modal input {
+  #user .search-modal input {
     width: 40%;
     padding: 10px 20px;
     border-radius: 10px;
     outline: none;
     color: #000; }
-  .search-modal .close {
+  #user .search-modal .close {
     position: absolute;
     top: 100px;
     right: 150px; }
-
-.active {
+#user .active {
   inset: 0; }
+
+#admin {
+  color: #fff; }
+  #admin a {
+    color: #fff; }
+  #admin #createmovie form {
+    width: 350px;
+    margin-inline: auto; }
+    #admin #createmovie form * {
+      width: 100%;
+      display: block;
+      margin-bottom: 15px; }
+    #admin #createmovie form input {
+      padding: 10px;
+      font-size: 18px; }
+    #admin #createmovie form textarea {
+      height: 150px; }
+    #admin #createmovie form button {
+      padding: 10px 30px;
+      background-color: #fff; }
