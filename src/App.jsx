@@ -12,6 +12,7 @@ import Dashboard from "./pages/admin/dashboard";
 import Users from "./pages/admin/users";
 import Movies from "./pages/admin/movies";
 import CreateMovie from "./pages/admin/createmovie";
+import Register from "./pages/user/register";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="fav" element={<Favorite />} />
           <Route path="save" element={<SavePage />} />
           <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
           <Route path="save/:list" element={<SingleList />} />
           <Route path="search/:param" element={<Search />} />
           <Route path="movie/:id" element={<SingleMovie />} />

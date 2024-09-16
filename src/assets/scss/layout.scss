@@ -12,3 +12,34 @@
 @include display(inline);
 @include display(grid);
 @include display(block);
+
+@include createLayout("xs", 576px);
+@include createLayout("sm", 576px);
+@include createLayout("md", 768px);
+@include createLayout("lg", 992px);
+@include createLayout("xl", 1200px);
+@include createMargin("t", 30px);
+@include createMargin("my", 30px);
+@include createMargin("mb", 30px);
+
+.container {
+  width: 85%;
+  max-width: 1140px;
+  margin-inline: auto;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline: -15px;
+}
+
+[class^="col-"] {
+  padding-inline: 15px;
+  box-sizing: border-box;
+}
+
+.text-center {
+  text-align: center;
+}

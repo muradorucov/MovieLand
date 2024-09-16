@@ -4,12 +4,47 @@
   }
 }
 @mixin align($param) {
-    .align-items-#{$param} {
-      align-items: $param;
-    }
+  .align-items-#{$param} {
+    align-items: $param;
   }
+}
 @mixin display($param) {
   .d-#{$param} {
     display: $param;
+  }
+}
+
+@mixin createLayout($sizeName, $size) {
+  @if $sizeName == "xs" {
+    @media screen and (max-width: $size) {
+      @for $i from 1 to 12 {
+        .col-#{$i} {
+          width: 100%/12 * $i;
+        }
+      }
+    }
+  } @else {
+    @media screen and (min-width: $size) {
+      @for $i from 1 to 12 {
+        .col-#{$sizeName}-#{$i} {
+          width: 100%/12 * $i;
+        }
+      }
+    }
+  }
+}
+@mixin createMargin($val, $size) {
+  @if $val == "t" {
+    .m#{$val} {
+      margin-top: $size;
+    }
+  } @else if($val == "my") {
+    .my {
+      margin-block: $size;
+    }
+  } @else if($val == "mb") {
+    .mb {
+      margin-bottom: $size;
+    }
   }
 }

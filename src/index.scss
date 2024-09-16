@@ -7,11 +7,13 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #050738;
 }
+
 #user {
   header {
     padding-block: 1.9rem;
     box-shadow: 0 0 10px 1px #6e6767;
     padding-inline: 7rem;
+    margin-bottom: 4rem;
 
     * {
       color: #fff;
@@ -47,6 +49,7 @@ body {
 
   .search-modal {
     position: fixed;
+    z-index: 10;
     inset: 0;
     bottom: 100vh;
     top: -100vh;
@@ -72,6 +75,46 @@ body {
   .active {
     inset: 0;
   }
+  color: #fff;
+
+  .movie {
+
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    color: #050738;
+
+    img {
+      height: 300px;
+      object-fit: cover;
+    }
+
+    button {
+      font-size: 25px;
+    }
+  }
+
+  #user-form {
+    fieldset {
+      margin-top: 50px;
+      padding: 30px;
+      legend {
+        font-size: 30px;
+      }
+      input {
+        width: 100%;
+        display: block;
+        padding: 10px 25px;
+        font-size: 17px;
+        margin-bottom: 12px;
+      }
+      span {
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
 }
 
 #admin {
@@ -89,14 +132,12 @@ body {
         width: 100%;
         display: block;
         margin-bottom: 15px;
-
       }
       input {
         padding: 10px;
         font-size: 18px;
       }
       textarea {
-      
         height: 150px;
       }
       button {
